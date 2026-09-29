@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Riverside Nest Bridge is a private household integration connecting authorised Google Nest thermostats with Apple Home through Homebridge.">
+  <title>Riverside Nest Bridge</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #172a38; background: #f6f8fa; }
+    * { box-sizing: border-box; }
+    body { margin: 0; line-height: 1.65; }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 24px; }
+    h1 { margin: 36px 0 12px; font-size: clamp(2rem, 6vw, 2.8rem); line-height: 1.15; letter-spacing: -.035em; }
+    h2 { margin-top: 32px; font-size: 1.25rem; line-height: 1.35; }
+    p, ul { margin: 12px 0; }
+    li { margin: 6px 0; }
+    a { color: #075c85; text-underline-offset: .18em; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid #075c85; outline-offset: 4px; border-radius: 2px; }
+    footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #c6d1d9; font-size: .95rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Riverside Nest Bridge</h1>
+    <p>A private household integration for connecting authorised Google Nest thermostats to Apple Home through Homebridge.</p>
+    <p>This is a personal household project, not a commercial app. It has no public sign-up, account registration or subscription service.</p>
+
+    <p><strong>Setup status:</strong> Nest is not yet connected; the bridge is still being set up. Thermostat controls through this bridge have not yet been verified.</p>
+
+    <h2>What the bridge is designed to do</h2>
+    <p>Once connected, and with the household owner’s permission, the bridge will use Google Nest’s Smart Device Management service to read supported thermostat information and make permitted temperature and mode changes.</p>
+    <ul>
+      <li>Display temperature, humidity, thermostat mode, target temperature and heating or idle state, where available.</li>
+      <li>Use device and room metadata to identify the authorised thermostats.</li>
+      <li>Allow authorised Apple Home users to change supported thermostat modes and temperature setpoints through HomeKit.</li>
+    </ul>
+
+    <h2>How the connection works</h2>
+    <p>The intended setup runs Homebridge on the household owner’s always-on Mac. Once connected, it will communicate with Google’s Nest service and receive device updates through Google cloud event delivery. Homebridge will present supported thermostat controls to Apple Home using HomeKit.</p>
+    <p>The integration depends on those services as well as the local bridge. Google and Apple operate their respective services; Riverside Nest Bridge is an independent personal integration.</p>
+
+    <h2>Privacy and access</h2>
+    <p>The owner chooses which supported Nest devices to authorise. Access can be withdrawn through the relevant Google Account or Partner Connections permissions, and the local bridge can be disabled.</p>
+    <p>Read the <a href="privacy.html">privacy and data-handling notice</a> for the information used, credential storage and revocation details.</p>
+
+    <footer>Riverside Nest Bridge · Private household project · <time datetime="2026-09-29">29 September 2026</time></footer>
+  </main>
+</body>
+</html>
