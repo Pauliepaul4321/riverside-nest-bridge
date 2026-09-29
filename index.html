@@ -27,10 +27,8 @@
     <p>A private household integration for connecting authorised Google Nest thermostats to Apple Home through Homebridge.</p>
     <p>This is a personal household project, not a commercial app. It has no public sign-up, account registration or subscription service.</p>
 
-    <p><strong>Setup status:</strong> Nest is not yet connected; the bridge is still being set up. Thermostat controls through this bridge have not yet been verified.</p>
-
     <h2>What the bridge is designed to do</h2>
-    <p>Once connected, and with the household owner’s permission, the bridge will use Google Nest’s Smart Device Management service to read supported thermostat information and make permitted temperature and mode changes.</p>
+    <p>With the household owner’s permission, the bridge uses Google Nest’s Smart Device Management service to read supported thermostat information and make permitted temperature and mode changes.</p>
     <ul>
       <li>Display temperature, humidity, thermostat mode, target temperature and heating or idle state, where available.</li>
       <li>Use device and room metadata to identify the authorised thermostats.</li>
@@ -38,7 +36,7 @@
     </ul>
 
     <h2>How the connection works</h2>
-    <p>The intended setup runs Homebridge on the household owner’s always-on Mac. Once connected, it will communicate with Google’s Nest service and receive device updates through Google cloud event delivery. Homebridge will present supported thermostat controls to Apple Home using HomeKit.</p>
+    <p>Homebridge runs on the household owner’s always-on Mac. The connection uses Google’s Nest service and Google cloud event delivery for thermostat data and updates. Homebridge presents supported thermostat controls to Apple Home using HomeKit.</p>
     <p>The integration depends on those services as well as the local bridge. Google and Apple operate their respective services; Riverside Nest Bridge is an independent personal integration.</p>
 
     <h2>Privacy and access</h2>
